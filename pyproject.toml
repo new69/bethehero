@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "bethehero"
+version = "0.1.0"
+description = ""
+authors = ["Jefferson de Oliveira Silva <spalla69@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+blue = "*"
+mypy = "*"
+pip-audit = "*"
+ruff = "*"
+
+[tool.blue]
+line-length = 120
+
+[tool.coverage.report]
+exclude_also = [
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = "ignore::DeprecationWarning"
+addopts = "--cov=src --cov-branch --cov-report=html --no-cov-on-fail"
+
+[tool.mypy]
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 120
+select = [
+    "A",
+    "ARG",
+    "B",
+    "C",
+    "C4",
+    "E",
+    "ERA",
+    "F",
+    "I",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "RET",
+    "S",
+    "T10",
+    "UP",
+    "W",
+]
+ignore = ["A003"]
+target-version = "py311"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**" = ["ARG", "S"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
