@@ -7,7 +7,7 @@ class TestUsercaseCreateOng:
     def test_create_ong(self) -> None:
         ong_repository = OngRepositoryMemory()
         usercase = CreateOng(repository=ong_repository)
-        ong = Ong(name='Ong Test', email='test@test.com', whatsapp='+551199999999', document='123.456.789/0001-10')
+        ong = Ong(name='Ong Test', email='test@test.com', whatsapp='+55(11)99999999', document='52.203.101/0001-63')
         expected_response = usercase.execute(ong=ong)
 
         assert isinstance(expected_response, Ong)

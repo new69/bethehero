@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pydantic = "*"
+pycpfcnpj = "^1.7.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
@@ -16,6 +17,7 @@ blue = "*"
 mypy = "*"
 pip-audit = "*"
 ruff = "*"
+ipython = "*"
 
 [tool.blue]
 line-length = 120

@@ -8,11 +8,3 @@ class CreateOng:
 
     def execute(self, *, ong: Ong) -> Ong:
         return self.repository.create(ong=ong)
-
-
-# SOLID
-# Single Responsability Principle
-# Open Closed Principle
-# Liskov Substitution Principle
-# Interface Segregation Principle
-# Dependency Inversion Principle
