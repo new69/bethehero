@@ -2,9 +2,9 @@ from uuid import uuid4
 
 from pydantic import BaseModel, Field, field_validator
 
-from src.domain.entity.brazilian_document import BrazilianDocument
-from src.domain.entity.email import Email
-from src.domain.entity.phone_number import PhoneNumber
+from src.domain.entity.validators.brazilian_document import BrazilianDocument
+from src.domain.entity.validators.email import Email
+from src.domain.entity.validators.phone_number import PhoneNumber
 
 
 class Ong(BaseModel):

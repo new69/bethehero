@@ -1,6 +1,6 @@
 import pytest
 
-from src.domain.entity.phone_number import PhoneNumber
+from src.domain.entity.validators.phone_number import PhoneNumber
 
 
 class TestPhoneNumber:

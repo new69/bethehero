@@ -1,6 +1,6 @@
 import pytest
 
-from src.domain.entity.brazilian_document import BrazilianDocument
+from src.domain.entity.validators.brazilian_document import BrazilianDocument
 
 
 class TestBrazilianDocument:

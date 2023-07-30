@@ -1,6 +1,6 @@
 import pytest
 
-from src.domain.entity.email import Email
+from src.domain.entity.validators.email import Email
 
 
 class TestEmail:

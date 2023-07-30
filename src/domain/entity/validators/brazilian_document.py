@@ -1,14 +1,16 @@
 from pycpfcnpj import cpfcnpj  # type: ignore
 
+from src.domain.entity.validators.validator_interface import ValidatorInterface
 
-class BrazilianDocument:
+
+class BrazilianDocument(ValidatorInterface):
     def __init__(self, document: str) -> None:
         self.document = document
-        self.__validate()
+        self.validate()
 
     def get_value(self) -> str:
         return self.document
 
-    def __validate(self) -> None:
+    def validate(self) -> None:
         if not cpfcnpj.validate(self.document):
             raise ValueError('Invalid document')
