@@ -1,7 +1,7 @@
 from src.application.usercase.create_ong import CreateOng
 from src.application.usercase.find_ong_by_email import FindOngByEmail
 from src.domain.entity.ong import Ong
-from src.infra.repository.ong_repository_memory import OngRepositoryMemory
+from src.infra.repository.ong.ong_repository_memory import OngRepositoryMemory
 
 
 class TestFindOngByEmail:

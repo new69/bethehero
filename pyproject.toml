@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 pydantic = "*"
 pycpfcnpj = "^1.7.0"
+sqlalchemy = "^2.0.19"
+psycopg2 = "^2.9.6"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
